@@ -1,0 +1,353 @@
+Hello new safe-guard user
+
+Just double click the module to load it, or preferably load it in your boot file
+Once installed, SafeGuard will hunt for active viruses every 20 seconds (this time delay will be configurable in the next version) whilst the in the wimp
+It will also check any files before they are loaded.
+
+Many viruses will be detected in more than one way. This means that often, new strains of existing viruses may be detected and warning given. Later SafeGuard will also attempt to disinfect viruses if it can. Regardless of this I recomend that if a viruses IS detect YOU SHOULD SWITCH THE MACHINE OFF as soon as possible and insert the safeguard master disc and boot from that.
+
+[ Hum ... I do I go through getting people to not boot from HD --- I guess I'll have to gave an option of set boot from floppy, put up a message to insert Safe-Guard master disc (Invest III master ?) and reset the machine ]
+
+--------------------------------------------------------------------------------
+
+Terms & Stuff
+
+Families
+
+ICON        Alien DieHard Ex_port ExtendV2 Icon Funky VanDamme
+
+VIGAY       AxisHack Ebenezer Vigay
+
+LINK        BBCEconet Breakfast Link
+
+--------------------------------------------------------------------------------
+
+Viruses
+```````
+
+All the viruses that SafeGuard will spot, how it spots them and other bits too
+
+-------------------------------------------------------------------------------
+Alien  [ Need more info ]
+
+Will spot running as Icon Varient
+-------------------------------------------------------------------------------
+AprilFool
+
+Will catch Boot file being executed
+Will catch Task starting
+Will catch Task running
+
+-------------------------------------------------------------------------------
+Archie
+
+Will catch absolute file being loaded (1210 Sig)
+Will catch running via OS_File 36 semaphore
+
+--------------------------------------------------------------------------------
+Arcuebus
+
+Will catch boot file executing
+Will catch module starting
+Will catch module running
+
+-------------------------------------------------------------------------------
+AxisHack
+
+Will catch boot file executing [ Probably, Need More Info ]
+Will catch task starting
+Will catch task running
+
+-------------------------------------------------------------------------------
+BBCEconet  [ Need more info IE where is encryption key ]
+
+Will catch FF8 loading via mov pc,r0 sig
+Will catch module starting
+Will catch module running
+
+-------------------------------------------------------------------------------
+BigFoot
+
+Wont basic file being loaded yet
+Will catch task starting
+Will catch task running
+
+-------------------------------------------------------------------------------
+BooHoo
+
+Will catch module loading (VIRU sig)
+Will catch running via SWI &98000 (B80000)
+
+-------------------------------------------------------------------------------
+Breakfast [ LINK varient ... need more info on encypt ]
+
+Will catch loading via 'mov pc,r0' sig
+Will catch module starting
+Will catch module running
+
+-------------------------------------------------------------------------------
+CeBIT
+
+Will catch !boot loading
+Will catch module starting
+Will catch module running
+
+-------------------------------------------------------------------------------
+Code
+
+Will catch !boot loading
+Will catch TASK starting
+Will catch TASK running
+-------------------------------------------------------------------------------
+Diehard
+
+Will catch !boot loading
+Will catch running as ICON variet
+-------------------------------------------------------------------------------
+Ebenezer
+
+Will catch !boot loading
+Will catch task starting
+Will catch task running
+-------------------------------------------------------------------------------
+EMod
+
+Will catch task starting
+Will catch task running
+-------------------------------------------------------------------------------
+Ex_port
+
+Will catch !boot starting
+Will catch running as ICON varient
+-------------------------------------------------------------------------------
+Extend
+
+Will catch !boot starting
+Will catch module starting
+Will catch module running
+Will now catch HLCC12 and Ohshit varients
+-------------------------------------------------------------------------------
+ExtendV2
+
+Will catch !boot starting
+Will catch running as ICON varient
+-------------------------------------------------------------------------------
+FCodeX [ More Info needed ]
+-------------------------------------------------------------------------------
+Funky
+
+Will catch !boot starting
+Will catch task start
+Will catch task running
+-------------------------------------------------------------------------------
+Garfield_I
+
+Will catch !boot starting
+Will catch module starting
+Will catch module running
+-------------------------------------------------------------------------------
+Garfield_W
+
+Will catch !boot starting
+Will catch module starting
+Will catch module starting
+-------------------------------------------------------------------------------
+Handler [ Need more info ]
+Will catch !run
+-------------------------------------------------------------------------------
+Icon  { TESTED € }
+
+Will spot most varients via !boot
+Will spot all varients running (as ICON varient)
+-------------------------------------------------------------------------------
+Image
+
+Will catch !boot starting
+-------------------------------------------------------------------------------
+Image2 [ Need more info ]
+-------------------------------------------------------------------------------
+Increment [ Need more info ]
+-------------------------------------------------------------------------------
+IRQFix
+
+Will catch !boot starting
+Will catch module starting
+Will catch module running
+-------------------------------------------------------------------------------
+Link [ Need more info ]
+
+Will catch module starting
+Will catch module running
+Wont catch 2nd ins (mov pc,r0)
+-------------------------------------------------------------------------------
+Mode87
+
+Will catch !boot starting
+Will catch module starting
+Will catch module running
+-------------------------------------------------------------------------------
+Module  
+
+Will spot module starting { checked }
+Wont check infect module running {yet}
+-------------------------------------------------------------------------------
+MonitorDat
+
+Will catch !boot starting (probably)
+Will catch starting as Vigay varient
+Will catch running as Vigay varient
+-------------------------------------------------------------------------------
+MyMod [ Need more info ]
+
+Will catch !boot starting
+-------------------------------------------------------------------------------
+NetManager   [ Need more info ]
+
+Will catch module starting
+Will catch module running
+-------------------------------------------------------------------------------
+NetStatus [ Need more info ]
+
+Will catch module starting
+Will catch module running
+-------------------------------------------------------------------------------
+NewDesk [ Need more info (ie !boot file) ]
+
+Will spot task starting
+Will spot task running
+-------------------------------------------------------------------------------
+Parasite   [ Need more info (ie infection method) ]
+
+Will spot module starting
+Will spot module running
+-------------------------------------------------------------------------------
+Penicillin
+
+Will catch !boot starting
+Will catch running as Icon varient
+-------------------------------------------------------------------------------
+Poltergeist  [ Need more info ( like infection method ) ]
+
+
+Will catch running as Icon varient
+-------------------------------------------------------------------------------
+Runopt
+
+Will catch !boot starting
+Will catch Task starting
+Will catch task running
+-------------------------------------------------------------------------------
+Shy [ Need More Info ]
+
+Wont catch module starting yet
+Wont catch module running yet
+-------------------------------------------------------------------------------
+Sprite [ Need more info ]
+
+Will give dodgey sprite warning on load
+-------------------------------------------------------------------------------
+SpriteUtils [ Need more info ]
+
+Will catch !boot
+Will catch module starting
+Will catch module running
+-------------------------------------------------------------------------------
+TaskManager  [ Need more info ]
+
+Wont catch !boot yet
+Will catch task starting
+Will catch task running
+-------------------------------------------------------------------------------
+T2   [ Need more info ]
+
+Will stop startup by answering service call
+-------------------------------------------------------------------------------
+Terminator
+
+Will catch !boot
+Will catch task starting
+Will catch task running
+-------------------------------------------------------------------------------
+Thanatos
+
+Will catch !boot starting
+Will catch task starting
+Will catch task running
+-------------------------------------------------------------------------------
+TrapHandler
+
+Will catch !boot starting
+Will catch module starting
+Will catch module running
+-------------------------------------------------------------------------------
+Valid
+
+Will catch !run starting
+-------------------------------------------------------------------------------
+VanDamme
+
+Will catch running as Icon Varient
+-------------------------------------------------------------------------------
+Vigay
+
+Will catch !boot starting
+Will catch task starting
+Will catch task running
+-------------------------------------------------------------------------------
+Whoops [ Need more info ]
+Will catch !boot starting
+(causes problems with being a task called Paint )
+(If killed it will be spotted running as Icon varient)
+-------------------------------------------------------------------------------
+Wimpman
+
+Will catch !boot starting
+Will catch running as Icon varient
+-------------------------------------------------------------------------------
+
+Things still to do
+
+Check saves to files
+Check BASIC file
+*qdvcheckboot [ on | off ]
+Improve QDV_ReportVirus
+Reset_Machine safely routine
+
+--------------------------------------------------------------------------------
+
+Huge amount of thanks to the following people, without whom this app would never have seen the light of day.
+
+Rob Wyatt       Teaching me almost everything I know about the Arc, plus
+                providing hours of technical help, and testing.
+
+
+The following pieces of software are amongst those I use for virus analysis -
+( Whats good 'enuff' for Alans good enuff for me :-)  )
+
+QDBug - Vertical Twist, Amazing Debugger [ My own copy would be nice, Richard ]
+Dissi - John Tytgat of BASS, Excellen Dissasembler, Freeware too
+StrongEd - Guttorm Vik for Stallion Software, Brillian Text Editor
+UNDelete (part of Investigator 3) - Rob Wyatt for VT, Astounding file un-deleter
+Zap - Dominic Symes, Text Editor + lots of widgets (Guttorm take note)
+
+--------------------------------------------------------------------------------
+
+Contacting Me
+
+Mail
+
+   Glenn Pegden
+   38 Cleveleys Avenue
+   Lancaster
+   LA1 5HD
+   0524 34893
+
+EMAIL
+
+    glennp@jumper.mcc.ac.uk    [ Internet ]
+    pegden_gd@uk.ac.uclan.p1   [ Janet ]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Please send any new viruses/strains to me either by email/mail
+
+        ******* PLEASE MAKE SURE ANY VIRUSES ARE WELL LABLED **********
